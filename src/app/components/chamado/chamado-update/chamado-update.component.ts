@@ -54,10 +54,6 @@ export class ChamadoUpdateComponent implements OnInit {
     })
   }
 
-  cancelar(): void {
-    this.router.navigate(['chamados'])
-  }
-
   findById(): void {
     this.chamadoService.findById(this.chamado.id).subscribe(resposta => {
       this.chamado = resposta
